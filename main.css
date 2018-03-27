@@ -1,0 +1,13 @@
+.animal {
+    margin: 1%;
+    padding: 2%;
+    width: 25%;
+    border: 2px solid slategray;
+    background-color: skyblue;
+    text-align: center;
+}
+.animal-image {
+    width: 65%;
+    height: 40%;
+    margin: 0 auto;
+}
