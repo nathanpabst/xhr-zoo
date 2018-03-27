@@ -4,22 +4,25 @@ const printToDom = (domString, divId) => {
     document.getElementById(divId).innerHTML = domString;
 };
 
-const domString = (animalArray) => {
-    console.log("animalArray", animalArray);
+const buildDomString = (animalArray) => {
     let domString = "";
-    for (let i = 0; i < animalArray.length; i++){
-        domString += `<h1>${animalArray[i].name}</h1>`;
-    }
+    animalArray.forEach((animals) => {
+        domString += `<div class="animal">`;
+        domString +=    `<h1>${animals.name}</h1>`;
+        domString +=    `<h3>${animals.number}</h3>`;
+        domString +=    `<img class="animal-image" src="${animals.imageUrl}" alt="">`;
+        domString +=    `<div class="button-container">`;
+        domString +=        `<button>Escaped</button>`;
+        domString +=    `</div>`;
+        domString += `</div>`;
+
+    })
     printToDom(domString, 'zoo');
 };
 
 function executeThisFunctionAfterFileLoads (){
-    console.log("executeThisFunctionAfterFileLoads", Date.now());
-    console.log("this", this);
-    console.log("this.responseText", this.responseText);
     const data = JSON.parse(this.responseText);
-    console.log("data", data);
-    domString(data.animals);
+    buildDomString(data.animals);
 }
 
 function WTF(){
@@ -35,3 +38,4 @@ const startApplication = () => {
     console.log("myrequest", myRequest);
 };
 startApplication();
+
