@@ -1,0 +1,107 @@
+{
+    "animals": [{ 
+    "name": "Blue Poison Arrow Frog",
+    "type":"Amphibian",
+    "number": 10,
+    "isCarnivore": true,
+    "imageUrl": "https://www.speakcdn.com/assets/2147/12_frogs.jpg"
+    },
+    {
+        "name": "Hellbender",
+        "type":"Amphibian",
+        "number": 11,
+        "isCarnivore": true,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_hellbender-sm.jpg"
+    },
+    {
+        "name": "Panama Golden Frog",
+        "type":"Amphibian",
+        "number": 12,
+        "isCarnivore": true,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_golden-frog-katie-gregory.jpg"
+    },
+    {
+        "name": "Aldabra Tortoise",
+        "type":"Reptile",
+        "number": 13,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_koraline_-_aldabra_-_katie_gregory.jpg"
+    },
+    {
+        "name": "American Alligator",
+        "type":"Reptile",
+        "number": 14,
+        "isCarnivore": true,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_alligator8.jpg"
+    },
+    {
+        "name": "Galapagos Tortoise",
+        "type":"Reptile",
+        "number": 15,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/tortoise6.jpg"
+    },
+    {
+        "name": "Alpaca",
+        "type":"Mammal",
+        "number": 16,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_alpaca1.jpg"
+    },
+    {
+        "name": "Belted Galloway",
+        "type":"Mammal",
+        "number": 17,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_belted-galloway-web9.jpg"
+    },
+    {
+        "name": "Clouded Leopard",
+        "type":"Mammal",
+        "number": 18,
+        "isCarnivore": true,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_cloudedleopard7.jpg"
+    },
+    {
+        "name": "Andean Goose",
+        "type":"Bird",
+        "number": 19,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_andean-geese-web.jpg"
+    },
+    {
+        "name": "Blue-Billed Curassow",
+        "type":"Bird",
+        "number": 20,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_curassow-1.jpg"
+    },
+    {
+        "name": "Cassowary",
+        "type":"Bird",
+        "number": 21,
+        "isCarnivore": true,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/cassowary8.jpg"
+    },
+    {
+        "name": "Black Arowana",
+        "type":"Fish",
+        "number": 22,
+        "isCarnivore": true,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_black-arowana-web.jpg"
+    },
+    {
+        "name": "Blue Discus",
+        "type":"Fish",
+        "number": 23,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_discus-web.jpg"
+    },
+    {
+        "name": "Bluehead Wrasse",
+        "type":"Fish",
+        "number": 4,
+        "isCarnivore": false,
+        "imageUrl": "https://www.speakcdn.com/assets/2147/12_bluehead-wrasse-web.jpg"
+    }]
+    }
