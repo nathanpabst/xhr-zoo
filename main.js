@@ -7,12 +7,16 @@ const printToDom = (domString, divId) => {
 const buildDomString = (animalArray) => {
     let domString = "";
     animalArray.forEach((animals) => {
-        domString += `<div class="animal">`;
+        if (animals.isCarnivore) {
+            domString += `<div class="animial carnivore">`;
+        } else {
+            domString += `div class ="animal vegetable">`;
+        }
         domString +=    `<h1>${animals.name}</h1>`;
         domString +=    `<h3>${animals.number}</h3>`;
         domString +=    `<img class="animal-image" src="${animals.imageUrl}" alt="">`;
         domString +=    `<div class="button-container">`;
-        domString +=        `<button>Escaped</button>`;
+        domString +=        `<button class="escaped">Escaped</button>`;
         domString +=    `</div>`;
         domString += `</div>`;
 
@@ -20,10 +24,31 @@ const buildDomString = (animalArray) => {
     printToDom(domString, 'zoo');
 };
 
+const addEscapedEventListeners = () => {
+    const escapedButtons = document.getElementsByClassName('escaped');
+    for (let i = 0; i <escapedButtons.length; i++){
+        escapedButtons[i].addEventListener('click', animalEscaped);
+    }
+};
+
+const animalEscaped = () => {
+
+    showCarnivores();
+    showVegetables();
+};
+
+const showCarnivores = () => {};
+const showVegetables = () => {};
+
+
+
 function executeThisFunctionAfterFileLoads (){
     const data = JSON.parse(this.responseText);
     buildDomString(data.animals);
+    addEscapedEventListeners();
 }
+
+
 
 function WTF(){
     console.log("something went wrong");
