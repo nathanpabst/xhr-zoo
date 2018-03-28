@@ -66,13 +66,11 @@ const showCarnivores = () => {
 
 const initializeEatmeButtons = () => {
     const eatMeButtons = document.getElementsByClassName('eat-me');
-    console.log(eatMeButtons);
     for (let n = 0; n < eatMeButtons.length; n++) {
         eatMeButtons[n].addEventListener('click', itsAlreadyBeenEaten);
     }
 }
 const itsAlreadyBeenEaten = (e) => {
-    console.log('already');
     const currentNumber = e.target.parentNode.parentNode.children[1].innerHTML;
     const newNumber = currentNumber*1 -1;
     e.target.parentNode.parentNode.children[1].innerHTML = newNumber;
@@ -103,7 +101,6 @@ const startApplication = () => {
     myRequest.addEventListener("error", WTF);
     myRequest.open("GET", "animals.json");
     myRequest.send();
-    console.log("myrequest", myRequest);
 };
 startApplication();
 
