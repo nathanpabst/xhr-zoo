@@ -1,3 +1,8 @@
+#zoo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .animal {
     margin: 1%;
     padding: 2%;
