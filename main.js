@@ -8,9 +8,9 @@ const buildDomString = (animalArray) => {
     let domString = "";
     animalArray.forEach((animals) => {
         if (animals.isCarnivore) {
-            domString += `<div class="animial carnivore">`;
+            domString += `<div class="animal carnivore">`;
         } else {
-            domString += `div class ="animal vegetable">`;
+            domString += `<div class ="animal vegetable">`;
         }
         domString +=    `<h1>${animals.name}</h1>`;
         domString +=    `<h3>${animals.number}</h3>`;
@@ -32,13 +32,26 @@ const addEscapedEventListeners = () => {
 };
 
 const animalEscaped = () => {
-
     showCarnivores();
     showVegetables();
 };
 
-const showCarnivores = () => {};
-const showVegetables = () => {};
+const showCarnivores = () => {
+    const carnivores = document.getElementsByClassName('carnivore');
+    for (let j= 0; j<carnivores.length; j++) {
+        carnivores[j].children[3].innerHTML = '';
+        carnivores[j].classList.add('red');
+    }        
+};    
+
+const showVegetables = () => {
+    const vegetables = document.getElementsByClassName('vegetable');
+    for (let k = 0; k<vegetables.length; k++) {
+        vegetables[k].children[3].innerHTML = `<button>EAT ME!!!</button>`;
+        vegetables[k].classList.add('green');
+
+    }
+};
 
 
 
@@ -47,8 +60,6 @@ function executeThisFunctionAfterFileLoads (){
     buildDomString(data.animals);
     addEscapedEventListeners();
 }
-
-
 
 function WTF(){
     console.log("something went wrong");
