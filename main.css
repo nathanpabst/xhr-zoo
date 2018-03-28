@@ -7,7 +7,11 @@
     text-align: center;
 }
 .animal-image {
-    width: 65%;
-    height: 40%;
-    margin: 0 auto;
+    width: 400px;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
 }
